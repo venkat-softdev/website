@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster',cursive;
+}
+ body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+ }
+ h1{
+    font-size: 250px;
+   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+   -webkit-background-clip:text ;
+   color: transparent;
+   background-size: 500% 500%;
+   animation:  text 2s ease infinite;
+   
+ }
+ @keyframes text{
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 100%;
+    }
+ }
