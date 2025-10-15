@@ -341,7 +341,7 @@ img {
     }
 
     .home{ 
-      top: 50px;
+      top: 110px;
       position: relative;
       width: 100%;
       height: 100vh;
@@ -393,7 +393,7 @@ img {
       text-decoration: none;
       margin-left: 20px;
       border: 2px solid #a55eea;
-      padding: 6px 10px;
+      padding: 6px 15px;
       border-radius: 10px;
       color:#fff;
       background-color: #a55eea;
