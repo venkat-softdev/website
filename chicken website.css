@@ -96,6 +96,7 @@ body{
     height: 100%;
     transform: translateX(-100%);
      transition: all 0.5s linear;
+     z-index: 100;
   }
   .navbar h3{
     padding: 1rem;
@@ -615,6 +616,7 @@ body{
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 1;
 }
   textarea.form-control{
     height: 100px;
@@ -634,6 +636,7 @@ body{
   .form-control:focus + .form-label {
     top: -10px;
     color: var(--clr-primary);
+    z-index: 5;
    
   }
   .form-control:focus{
@@ -641,6 +644,24 @@ body{
   }
   .form-control:not(:focus):valid + label{
     top: -10px;
+    z-index: 5;
   }
+.submit-btn{
+  padding: 0.7rem 1rem;
+  margin-top: 3.5rem;
+}
 
+@media screen and (min-width:992px) {
+  .contact-form,
+  .contact-info{
+    float: left;
+    width: 50%;
+  }
+  
+}
 /* ----contact end----- */
+
+
+/* footer start */
+
+/* footer end */
