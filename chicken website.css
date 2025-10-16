@@ -663,5 +663,47 @@ body{
 
 
 /* footer start */
+.footer{
+  background-color: #222;
+  text-align: center;
+  width: 100%;
+  padding: 30px 100px;
+  
+  
+ 
+ 
+  
+  
+}
+.social-icon i{
+  height: 32px;
+  width: 32px;
+  color: var(--clr-white);
+  font-size: 25px;
+  margin-left: 20px;
+  transition: all 0.2s linear;
+ 
+}
+.social-icon i:hover{
+  color: var(--clr-primary-light);
+}
+
+.company{
+  color: white;
+  
+ 
+}
+.foot{
+  color: #fff;
+  margin-top: 30px;
+  font-family: var(--ff-primary);
+  font-size: 1.1rem;
+}
+
+.section-center-2{
+height: 100%;
+display: flex;
+justify-content: center;
+}
 
 /* footer end */
