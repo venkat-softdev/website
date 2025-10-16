@@ -624,10 +624,23 @@ body{
     left: 7px;
     top: 7px;
     color: var(--clr-grey-2);
-    background-color: blue;
+    background-color:#fff;
     padding: 0 6px;
     font-size: 14px;
     transition: all 0.2s linear;
     
   }
+  
+  .form-control:focus + .form-label {
+    top: -10px;
+    color: var(--clr-primary);
+   
+  }
+  .form-control:focus{
+    border: 1px solid var(--clr-primary);
+  }
+  .form-control:not(:focus):valid + label{
+    top: -10px;
+  }
+
 /* ----contact end----- */
