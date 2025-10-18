@@ -189,12 +189,7 @@ span{
     }
    
   }
-  .image .img-2{
-   position: absolute;
-  animation: car 8s linear infinite ;
-  right: 30px;
-  top: 200px;
-  }
+  
   
  
  @media screen and  (max-width:1200px) {
