@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+.logo img {
+  width: 100px;
+}
+
+/* --header start */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header .logo {
+  height: 30px;
+  margin-right: 10px;
+}
+.header .logo img {
+  height: 100%;
+  object-fit: contain;
+}
+.header .search-box {
+  width: 600px;
+  background-color: #dfe4ea;
+  padding: 3px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.header .search-box input {
+  height: 40px;
+  width: 600px;
+  border: none;
+  outline: none;
+  background-color: #dfe4ea;
+  padding-left: 10px;
+  padding: 5px;
+  border-left: 2px solid #333;
+  cursor: pointer;
+  font-size: 15px;
+}
+.header .search-box i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.header .navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 50px;
+  gap: 10px;
+}
+.header .navbar ul li {
+  margin-right: 20px;
+}
+.header .navbar ul li a img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.header .navbar ul li:last-child {
+  margin-right: 0;
+}
+.header .navbar ul li a i {
+  width: 22px;
+  height: 22px;
+  color: #333;
+}
+/* --header end */
+
+/* section start */
+.section {
+  padding: 30px 18%;
+  background-color: #fafafa;
+  display: flex;
+}
+.left-side {
+  width: 65%;
+}
+.left-side .story {
+  display: flex;
+  padding: 16px;
+  background-color: #fff;
+  /* border: 1px solid #333; */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  
+  border-radius: 3px;
+}
+.left-side .story .stories {
+  margin-right: 10px;
+  width: 17%;
+}
+.story .stories a img {
+  border-radius: 50%;
+  border: 2px solid #f0932b;
+  padding: 2px;
+  outline: 2px solid #fc427b;
+  object-fit: contain;
+}
+.story .stories p {
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #333;
+}
+
+.post-content img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+/* post */
+.posts {
+  margin: 25px 0;
+  background-color: #fff;
+  /* border: 1px solid blue; */
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.post-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+.post-left {
+  display: flex;
+  align-items: center;
+}
+.posts .post-title .post-left .image img {
+  border-radius: 50%;
+  object-fit: contain;
+}
+.details .name {
+  padding-bottom: 2px;
+  font-weight: 600;
+}
+.image {
+  margin-right: 15px;
+}
+.posts .post-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+.post-footer .like-share-comment i {
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 14px;
+}
+.post-footer .save {
+  font-size: 20px;
+}
+.post-footer-content {
+  padding: 0 16px 16px 16px;
+}
+.post-footer-content p {
+  margin-bottom: 3px;
+}
+.post-footer-content .likes {
+  margin-bottom: 8px;
+}
+.post-footer-content .name {
+  font-weight: 600;
+}
+.post-footer-content .posting-time {
+  font-size: 10px;
+  margin-top: 6px;
+}
+.posts .add-comment {
+  padding: 16px;
+  border-top: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.posts .add-comment .left-side {
+  display: flex;
+  align-items: center;
+}
+.posts .add-comment .left-side i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.posts .add-comment .left-side input {
+  height: 30px;
+  padding-left: 10px;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #333;
+  outline: none;
+}
+
+
+/* post end */
+/* section end */
+
+
+/* right side sec start */
+
+.right-side{
+    width: 35%;
+    margin-top: 15px;
+    position:fixed;
+    right: 30px;
+    
+}
+.right-side .profile-left .image img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: 15px;
+}
+ .right-side .profile-title{
+ display: flex;
+ align-items: center;
+}
+.right-side .profile-title .profile-left{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.right-side .profile-title .profile-left .details .name{
+    padding-bottom: 3px;
+}
+/* right side sec end */
