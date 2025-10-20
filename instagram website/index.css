@@ -15,7 +15,7 @@
   align-items: center;
   padding: 10px 60px;
   border-bottom: 1px solid rgba(219, 219, 219, 1);
-  background-color: #fff;
+ background-color: #fff; 
   position: sticky;
   top: 0;
   z-index: 10;
@@ -216,30 +216,106 @@
 
 /* right side sec start */
 
-.right-side{
+.right-side-2{
+    position:fixed;
     width: 35%;
     margin-top: 15px;
-    position:fixed;
-    right: 30px;
+     right: 30px;
     
 }
-.right-side .profile-left .image img{
+.right-side-2 .profile-left .image img{
     width: 56px;
     height: 56px;
     border-radius: 50%;
     object-fit: contain;
     margin-right: 15px;
+    
 }
- .right-side .profile-title{
+ .right-side-2 .profile-title{
  display: flex;
  align-items: center;
 }
-.right-side .profile-title .profile-left{
+.right-side-2 .profile-title .profile-left{
     display: flex;
     align-items: center;
     margin-right: 40px;
 }
-.right-side .profile-title .profile-left .details .name{
-    padding-bottom: 3px;
+.right-side-2 .profile-title .profile-left .details .name{
+    padding-bottom: 3px; 
 }
 /* right side sec end */
+
+
+
+/* suggestion  */
+
+.suggestion-title .suggestion-left .image img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  /* margin-right: 15px; */
+}
+
+.suggestion{
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+ .suggestion {
+   margin-left: 20px;
+} 
+.suggestion .follow{
+  margin-right: 50px;
+}
+.suggestion-title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.suggestion-title .suggestion-left{
+  display: flex;
+  align-items: center;
+ margin-right:90px ;
+}
+
+.suggestion-title .suggestion-left .details-2 .name{
+  padding-bottom: 3px;
+}
+
+
+
+/* media queries */
+
+@media (max-width:992px){
+  .header{
+    padding: 10px 20px;
+  }
+  .section .left-side{
+    width: 100%;
+  }
+  .section .right-side-2{
+    display: none;
+  }
+}
+@media (max-width:768px){
+  .header .search-box{
+    display: none;
+  }
+  .section{
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width:576px){
+  .story .stories{
+    width: 50%;
+    margin-right: 30px;
+  }
+  .header .navbar ul li{
+    margin-right: 10px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+}
+
