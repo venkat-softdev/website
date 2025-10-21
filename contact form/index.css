@@ -214,7 +214,7 @@ textarea::-webkit-scrollbar-thumb{
     font-size: 16px;
 }
 
-.inputgroup input:valid ~label, .inputgroup textarea:valid ~ label{
+.inputgroup input:not(:focus):valid ~label, .inputgroup textarea:not(:focus):valid ~ label{
     transform: translateY(-30px);
     font-size: 16px;
 }
