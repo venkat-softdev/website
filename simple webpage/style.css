@@ -34,6 +34,7 @@ body{
 
 }
 .form-grp{
+    height: 48px;
    position: relative;
     width: 100%;
    padding: 20px;
@@ -92,10 +93,13 @@ label{
 .form-grp input:focus ~ label{
     transform: translateY(-19px);
 }
-.form-grp textarea:focus ~ label{
+.form-grp textarea:focus + label{
     transform: translateY(-19px);
 }
 
+.form-grp textarea:not(:focus):valid + label{
+    transform: translateY(-19px);
+}
 
 
 
