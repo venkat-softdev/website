@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2e2e2e;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 8%;
+}
+.container .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+}
+.row section.col{
+    display: flex;
+    flex-direction: column;
+}
+.row section.left{
+     flex-basis: 35%;
+     min-width: 320px;
+     margin-right: 60px;
+  
+}
+
+.row section.right{
+ flex-basis: 60%;
+
+}
+
+section.left .contact-title h2{
+ position: relative;
+ font-size: 28px;
+ color: #ddd;
+ display: inline-block;
+ margin-bottom: 25px;
+}
+
+section.left .contact-title h2::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: #888;
+    top: 120%;
+    left: 0;
+}
+section.left .contact-title h2::after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    background-color: dodgerblue;
+    top: calc(120%-1px);
+    left: 0;
+    bottom: -11px;
+}
+section.left .contact-title p{
+    color: #ccc;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+}
+section.left .contact-info{
+    
+    margin-bottom: 16px;
+}
+.contact-info .icon-group{
+ 
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.icon-group .icon{
+    width: 45px;
+    height: 45px;
+    border: 2px solid dodgerblue;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    
+}
+.icon-group .icon i{
+    font-size: 20px;
+    position:absolute;
+    color: #ddd;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.icon-group .details span{
+    display: block;
+    color: #888;
+    font-size: 18px;
+}
+.icon-group .details span:nth-child(1){
+    text-transform: uppercase;
+    color: #ccc;
+}
+section.left .social-media{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 22px 0px 20px;
+}
+section.left .social-media a{
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  transition: 0.4s;
+}
+
+section.left .social-media a i{
+    color: #fff;
+    line-height: 35px;
+    font-size: 20px; 
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+section.left .social-media a:hover{
+    transform: translateY(-5px);
+    background-color: #2e2e2e;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+section.left .social-media a:hover i{
+    color: dodgerblue;
+}
+
+
+/*  section right (column) start */
+
+.row section.right .message-form{
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top:30px ;
+
+}
+.row section.right .inputgroup{
+ margin: 18px 0px;
+ position: relative;
+}
+.message-form .halfwidth{
+  flex-basis: 48%;
+ 
+}
+.message-form .fullwidth{
+    flex-basis: 100%;
+}
+.message-form input, .message-form textarea{
+    width: 100%;
+    font-size: 18px;
+    padding: 2px 0px;
+    background-color: #2e2e2e;
+    color: #ddd;
+    border: none;
+    border-bottom: 2px solid #666;
+    outline: none;
+    
+}
+.message-form textarea{
+    resize: none;
+    height: 220px;
+    display: block;
+}
+textarea::-webkit-scrollbar{
+    width: 5px;
+}
+textarea::-webkit-scrollbar-track{
+    background-color: #1e1e1e;
+    border-radius: 15px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: dodgerblue;
+    border-radius: 15px;
+}
+.inputgroup label{
+   position: absolute;
+   left: 0;
+   bottom: 4px;
+   font-size: 18px;
+   transition: 0.4s;
+   pointer-events: none;
+   
+   
+}
+.inputgroup:nth-child(4) label{
+    top: 2px;
+}
+.inputgroup input:focus ~label, .inputgroup textarea:focus ~ label{
+    transform: translateY(-30px);
+    font-size: 16px;
+}
+
+.inputgroup input:valid ~label, .inputgroup textarea:valid ~ label{
+    transform: translateY(-30px);
+    font-size: 16px;
+}
