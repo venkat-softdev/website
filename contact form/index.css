@@ -218,3 +218,52 @@ textarea::-webkit-scrollbar-thumb{
     transform: translateY(-30px);
     font-size: 16px;
 }
+
+.inputgroup button{
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color:dodgerblue ;
+    color: #ddd;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
+    transition: 0.4s;
+}
+.inputgroup button:hover{
+    background-color: #2e2e2e;
+    color: dodgerblue;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    border: 1px solid dodgerblue;
+}
+
+
+/* responsiveness */
+
+@media (max-width:1100px){
+    .message-form .halfwidth{
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width:992px){
+     .container .row{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+       
+    }
+    .row section.left,.row section.right{
+      flex-basis: 100%;
+      margin: 0px;
+    }
+}
+
+
+@media (max-width:576px){
+     .container .row{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+       
+    }
+   
+}
