@@ -170,7 +170,7 @@ span{
  .image img{
   
   position: absolute;
-  animation: car 5s linear infinite ;
+  animation: car 7s linear infinite ;
   right: 30px;
   top: 200px;
   }
