@@ -7,6 +7,7 @@
 
 body{
     background-color: #f1f2f6;
+    overflow-x:hidden ;
 }
 
 .header{
@@ -82,6 +83,37 @@ body{
     }
     to{
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.content{
+    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: text-2 2s ease forwards;
+  
+
+}
+.content p{
+    max-width: 500px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      padding: 10px;
+      border-radius: 10px;
+}
+
+@keyframes text-2{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
         opacity: 1;
     }
 }
