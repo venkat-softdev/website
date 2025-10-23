@@ -614,7 +614,7 @@ html{
  font-family: var(--ff-design);
  text-align: center;
  font-size: 1.75rem;
- color: #f53b57;
+  color: #f53b57; 
 }
 
 .form-group{
