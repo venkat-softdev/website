@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+}
+body{
+    background-color: #fff;
+}
+ .content{
+    margin: 30px 100px;
+ }
+ .content h1{
+    font-size: 40px;
+ }
+ .content p{
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 400;
+ }
+
+ .footer .container{
+    background-color: #000;
+    
+ }
+ .row{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 50px 100px;
+ }
+ .row p{
+    max-width: 300px;
+    font-weight: 16px;
+    color: #fff;
+    letter-spacing: 0.5;
+ }
+ .row .box{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-left: 30px;
+ }
+ .footer-col h4{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+ }
+
+ .footer-col ul{
+    list-style: none;
+    
+ }
+ .footer-col ul li{
+    margin: 20px 0;
+ }
+
+ .footer-col ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0.7;
+    text-align: center;
+    transition: 0.5s;
+ }
+
+ .footer-col ul li a:hover{
+    opacity: 1;
+ }
+ .footer-col .row .col p{
+    color: yellow;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5;
+    transition: 0.5s;
+ }
+ .footer-col .row .social-icons i{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 20px;
+ }
+ .footer-col .row .social-icons i:hover{
+    color: yellow;
+ }
+
+ @media (max-width:600px){
+    .footer .row{
+       flex-direction: column;
+       padding: 20px 30px;
+    }
+    .footer-col p{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .footer-col ul li{
+        text-align: center;
+    }
+   .footer-col .social-icons{
+    margin-top: 30px;
+   }
+   
+ }
