@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    background-color: aliceblue;
+}
+.content{
+    margin: 50px 50px;
+}
+.content h1{
+    font-size: 40px;
+}
+.content p{
+    font-size: 18px;
+}
+.footer .container{
+    background-color: #333;
+}
+.footer .container .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.row .footer-col h4{
+    color: #fff;
+     font-size: 20px;
+     font-weight: 500;
+     margin-bottom: 10px;
+}
+.row .footer-col ul{
+    list-style: none;
+}
+.row .footer-col ul li{
+    margin: 10px;
+}
+.row .footer-col ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.row .footer-col ul li a:hover{
+    opacity: 1;
+}
