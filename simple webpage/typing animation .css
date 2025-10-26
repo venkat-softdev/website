@@ -21,6 +21,7 @@ h1{
     text-align: center;
     color: #fff;
     letter-spacing: 1px;
+   
     
 }
 
@@ -30,12 +31,19 @@ h1{
      display: inline-block;
     opacity: 0;
     animation: text 2s ease forwards;
-
+   
      
      
  }
 
  @keyframes text{
-    
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
  }
  
