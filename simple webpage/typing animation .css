@@ -21,10 +21,21 @@ h1{
     text-align: center;
     color: #fff;
     letter-spacing: 1px;
+    
 }
-span{
-    color:#1e90ff ;
-    width: 0ch;
-    white-space:nowrap;
-    overflow: hidden;
-}
+
+  .layer{
+    color: dodgerblue;
+     
+     display: inline-block;
+    opacity: 0;
+    animation: text 2s ease forwards;
+
+     
+     
+ }
+
+ @keyframes text{
+    
+ }
+ 
