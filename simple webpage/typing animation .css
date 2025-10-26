@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#130f40;
+}
+
+h1{
+    font-size: 50px;
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+}
+span{
+    color:#1e90ff ;
+    width: 0ch;
+    white-space:nowrap;
+    overflow: hidden;
+}
