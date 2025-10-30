@@ -89,9 +89,31 @@ body{
     margin: 30px 50px;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: orangered;
-    color: #fff;
+    background:transparent;
+    color: #000;
     font-size: 20px;
     font-weight: 500;
     border: none;
+    position: relative;
+    border: 2px solid orangered;
+    
+}
+span{
+    position: absolute;
+    background-color:orangered;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.btn:hover span{
+    width: 100%;
+}
+
+.btn:hover{
+    color: #fff;
 }
