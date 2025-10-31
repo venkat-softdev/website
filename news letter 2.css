@@ -12,6 +12,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin: 30px auto;
     padding: 10px;
+    
 }
 
 .header{
@@ -30,6 +31,7 @@
 .con-1{
     margin-top: 50px;
     padding: 0px 20px;
+    margin: 20px 0px;
 }
 .con-1 h3{
     letter-spacing: 1px;
@@ -45,11 +47,24 @@
 }
 .con-1 .btn-1{
     background-color: #6e17c4;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 10px 15px;
     border-radius: 5px;
     border: none;
     color: #fff;
     font-weight: 600;
     
+}
+.con-1 .end{
+    margin: 10px 30px;
+    padding: 20px 40px;
+}
+.end h3{
+    padding: 7px 20px;
+    margin-top: 10px;
+}
+.end ul{
+    list-style: none;
+    padding: 10px 30px;
+  
 }
